@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --primary-color: #4b2aad;
+    --secondary-color: #1a1715;
+    --txt-color: #5c5856;
+    --btn-hover: #351e7a;
+    --hover-bg: #f5efeb;
+    --padding: 10px 15px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    line-height: 1.32;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Serif Display", serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    color: var(--txt-color);
+    line-height: 1.9;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 87vw;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: var(--padding);
+    font-size: 18px;
+    font-family: inherit;
+    color: var(--secondary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 4px solid #fff;
+}
+
+.secondary-btn:hover {
+    background: #f5efeb;
+    border: 4px solid #f5efeb;
+}
+
+.secondary-btn:active,
+.secondary-btn:focus {
+    background: #f5efeb;
+    border: 4px solid #dbd6e8;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    font-size: 16px;
+    padding: 13px 25px;
+}
+
+.primary-btn:hover {
+    background: var(--btn-hover);
+}
+
+.header {
+    position: fixed;
+    min-width: 100vw;
+    background: #fff;
+    top: 0;
+    padding: 15px 6.4%;
+}
+
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-content .header-left-items {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    width: 80px;
+}
+
+.header .header-list {
+    display: flex;
+    padding-left: 15px;
+
+    .list-item {
+        padding: 0;
+    }
+}
+
+.subnav {
+    display: none;
+}
+
+.subnav.show {
+    display: flex;
+    gap: 22px;
+    padding: 10px;
+    background: #fff;
+}
+
+.header-list .subnav .list-heading {
+    position: relative;
+    font-weight: 500;
+    font-family: inherit;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.header-list .subnav {
+    position: absolute;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 20px 2px #dbd6e8;
+}
+
+.fa-solid {
+    transition: all 0.3s ease-in-out;
+}
+
+.toggleicon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.subnav .list {
+    margin-bottom: 1.3em;
+}
+
+.subnav .list .items {
+    color: var(--txt-color);
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 2.5;
+    letter-spacing: 1px;
+}
+
+.subnav .list:last-child {
+    border-left: 1px solid lightgray;
+    padding-left: 15px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.main .hero .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .hero .layout .text,
+.main .hero .layout .img {
+    width: 50%;
+}
+
+.main .hero .layout .text .btn {
+    margin-top: 10px;
+}
+
+.main .hero .layout .text h2 {
+    font-size: 2.7rem;
+    padding-right: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main .hero .layout .text .heading,
+.products .courses .text .heading,
+.templates .text .heading,
+.coaches .text .heading {
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.main .hero .layout .img img {
+    border-radius: 10px;
+}
+
+.main .hero .layout figure {
+    margin-right: 0;
+}
+
+/* features */
+.features {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.features-description h3,
+.products .proucts-description h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+    letter-spacing: 0.1px;
+    padding: 0 12px;
+}
+
+.features-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
+    margin-top: 20px;
+    margin: 50px auto;
+}
+
+.features-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 33.3%;
+}
+
+.features-card .card .icon img {
+    width: 50px;
+}
+
+.features-card .card h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.features-card .card p {
+    font-size: 15px;
+}
+
+
+.products .proucts-description {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.products .courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.products .courses .text h3,
+.templates .text h3,
+.coaches .text h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.products .courses .text p,
+.templates .text p,
+.coaches .text p {
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.products .courses .text a,
+.templates .text a,
+.coaches .text a {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 17px;
+
+    &:hover {
+        .fa-arrow-right {
+            transform: translateX(5px);
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+
+
+.feedback {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.feedback .ratings {
+    margin-bottom: 15px;
+}
+
+.feedback .ratings .fa-star {
+    color: #f5a733;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.feedback .text p:first-child {
+    color: #000;
+    font-family: "DM Serif Display", serif;
+    font-size: 23px;
+    margin: 0 auto;
+}
+
+.feedback .text p:last-child {
+    font-size: 18px;
+}
+
+.templates,
+.coaches {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.signup {
+    background: #201445;
+    padding: 4rem 5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.signup h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.signup p {
+    color: #d7d2e8;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.signup button {
+    background: #9484c6;
+    color: #fff;
+    border: none;
+    margin-top: 22px;
+    padding: 12px 25px;
+    font-weight: 600;
+
+    &:hover {
+        transition: 0.1s all ease-in;
+        background: var(--btn-hover);
+    }
+}
+
+.footer {
+    margin-top: 5rem;
+    background: var(--hover-bg);
+    width: 100%;
+    padding: 5rem;
+}
+
+.footer .footer-links {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.footer .footer-links h4 {
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.footer .footer-links ul {
+    display: flex;
+    gap: 20px;
+    color: gray;
+    font-size: 17px;
+}
+
+.footer .footer-links ul li,
+.footer .copyrights ul li {
+    color: gray;
+    cursor: pointer;
+    border-bottom: 2px solid;
+
+    &:hover {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+
+.footer .copyrights {
+    margin-top: 5rem;
+    color: gray;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.footer .copyrights ul {
+    display: flex;
+    gap: 20px;
+}
+
+.lg-hidden {
+    display: none;
+}
+
+.md-hidden {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .lg-hidden {
+        display: block;
+        position: relative;
+    }
+
+    .mb-menu-items {
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        min-width: 100vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mb-menu-items .mb-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+    }
+
+    .mb-menu-items .mb-header p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .mb-menu-items .mb-header i {
+        cursor: pointer;
+    }
+
+    .mb-menu-items ul li {
+        margin: 15px 0;
+        font-family: "DM Serif Display", serif;
+        font-size: 20px;
+    }
+
+    .main .hero .layout .text h2 {
+        font-size: 2rem;
+    }
+
+    .md-hidden {
+        display: none;
+    }
+
+    .mb-subnav {
+        color: #5c5856;
+    }
+
+    .mbNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mb-subnav .list .list-heading {
+        margin-top: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+            "Helvetica Neue", sans-serif;
+    }
+
+    .mb-subnav .list .items li {
+        font-size: 14px;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+            "Helvetica Neue", sans-serif;
+    }
+
+    .mb-footer ul li .footerBtn {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .mb-footer ul li .footerItems {
+        font-size: 14px;
+        color: var(--txt-color);
+    }
+
+    .mb-footer ul li .footerItems ul li {
+        margin: 10px 0;
+        text-decoration: underline;
+        font-weight: 300;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+
+    .main .hero .layout {
+        flex-direction: column-reverse;
+    }
+
+    .main .hero .layout .text,
+    .main .hero .layout .img {
+        width: 100%;
+    }
+
+    .main .hero .layout .text {
+        margin-top: 50px;
+    }
+
+    .main .hero .layout .text p {
+        font-size: 1.1rem;
+        padding-right: 0;
+    }
+
+    .main .hero .layout .text h2 {
+        font-size: 1.7rem;
+        padding-right: 0;
+    }
+
+    .features-description {
+        margin-bottom: 30px;
+    }
+
+    .features-description h3,
+    .products .proucts-description h3 {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .features-card {
+        flex-direction: column;
+    }
+
+    .features-card .card {
+        width: 100%;
+    }
+
+    .products .courses {
+        flex-direction: column-reverse;
+    }
+
+    .products .courses .text h3,
+    .templates .text h3,
+    .coaches .text h3 {
+        font-size: 22px;
+        margin-top: 6px;
+    }
+
+    .products .courses .text p,
+    .templates .text p,
+    .coaches .text p {
+        font-size: 16px;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .feedback .text p:first-child {
+        font-size: 20px;
+    }
+
+    .feedback .text p:last-child {
+        font-size: 16px;
+    }
+
+    .templates,
+    .coaches {
+        flex-direction: column-reverse;
+    }
+
+    .signup {
+        padding: 2rem 1.5rem;
+    }
+
+    .signup h2 {
+        font-size: 1.7rem;
+    }
+
+    .footer {
+        padding: 1.5rem;
+    }
+}

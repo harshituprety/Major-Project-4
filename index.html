@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Host and Sell Digital Product</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- desktop header -->
+    <header class="header md-hidden">
+        <div class="header-content">
+            <div class="header-left-items">
+                <img class="logo" src="logo.svg" alt="" />
+                <ul class="header-list">
+                    <li class="list-item">
+                        <button class="btn secondary-btn dropdownNav">
+                            Website
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="subnav">
+                            <div class="list">
+                                <h3 class="list-heading">platform</h3>
+                                <ul class="items">
+                                    <li>Website builder</li>
+                                    <li>Website examples</li>
+                                    <li>Landing page examples</li>
+                                    <li>Blogging examples</li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3 class="list-heading">features</h3>
+                                <ul class="items">
+                                    <li>Blogging</li>
+                                    <li>Landing pages</li>
+                                    <li>Link in bio pages</li>
+                                    <li>Portfolio websites</li>
+                                    <li>Integrations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <button class="btn secondary-btn dropdownNav">
+                            Email
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="subnav">
+                            <div class="list">
+                                <h3 class="list-heading">platform</h3>
+                                <ul class="items">
+                                    <li>Email marketing</li>
+                                    <li>Email examples</li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3 class="list-heading">features</h3>
+                                <ul class="items">
+                                    <li>Email templates</li>
+                                    <li>Email designer</li>
+                                    <li>Email forms</li>
+                                    <li>Email analytics</li>
+                                    <li>Newsletters</li>
+                                    <li>Automations</li>
+                                    <li>Segmentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <button class="btn secondary-btn dropdownNav">
+                            Sell
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="subnav">
+                            <div class="list">
+                                <h3 class="list-heading">platform</h3>
+                                <ul class="items">
+                                    <li>Online courses</li>
+                                    <li>Online course examples</li>
+                                    <li>Digital downloads</li>
+                                    <li>Checkout</li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3 class="list-heading">features</h3>
+                                <ul class="items">
+                                    <li>Multimedia products</li>
+                                    <li>Persell product</li>
+                                    <li>Upsells</li>
+                                    <li>Coaching</li>
+                                    <li>Webinars</li>
+                                    <li>Affiliates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <button class="btn secondary-btn dropdownNav">Pricing</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="btn secondary-btn dropdownNav">
+                            Resources
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="subnav">
+                            <div class="list">
+                                <h3 class="list-heading">free resources</h3>
+                                <ul class="items">
+                                    <li>Resource center</li>
+                                    <li>Hire a Podia Pro</li>
+                                    <li>Creator Advice Library</li>
+                                    <li>Podia demo site</li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3 class="list-heading" style="visibility: hidden !important">
+                                    hidden
+                                </h3>
+                                <ul class="items">
+                                    <li>Creator stories</li>
+                                    <li>Free tools</li>
+                                    <li>Podia Creator Community</li>
+                                    <li>Help center</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right-items">
+                <button class="btn secondary-btn dropdownNav">Login</button>
+                <button class="btn primary-btn">Sign up free</button>
+            </div>
+        </div>
+    </header>
+    <!-- mobile header -->
+    <header class="header lg-hidden">
+        <div class="header-content">
+            <img class="logo" src="logo.svg" alt="" />
+            <div>
+                <button class="btn secondary-btn">Login</button>
+                <button class="btn secondary-btn mb-menu">
+                    Menu
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mb-menu-items container hide">
+            <div class="mb-header">
+                <p>MENU</p>
+                <i class="fa-solid fa-xmark" id="closeMenus"></i>
+            </div>
+            <ul class="mb-list">
+                <li>
+                    <section class="mbNav mbNav1">
+                        Website
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </section>
+                    <div class="mb-subnav subnav1 hide">
+                        <div class="list">
+                            <h3 class="list-heading">platform</h3>
+                            <ul class="items">
+                                <li>Website builder</li>
+                                <li>Website examples</li>
+                                <li>Landing page examples</li>
+                                <li>Blogging examples</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h3 class="list-heading">features</h3>
+                            <ul class="items">
+                                <li>Blogging</li>
+                                <li>Landing pages</li>
+                                <li>Link in bio pages</li>
+                                <li>Portfolio websites</li>
+                                <li>Integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <section class="mbNav mbNav2">
+                        Email
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </section>
+                    <div class="mb-subnav subnav2 hide">
+                        <div class="list">
+                            <h3 class="list-heading">platform</h3>
+                            <ul class="items">
+                                <li>Email marketing</li>
+                                <li>Email examples</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h3 class="list-heading">features</h3>
+                            <ul class="items">
+                                <li>Email templates</li>
+                                <li>Email designer</li>
+                                <li>Email forms</li>
+                                <li>Email analytics</li>
+                                <li>Newsletters</li>
+                                <li>Automations</li>
+                                <li>Segmentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <section class="mbNav mbNav3">
+                        Sell
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </section>
+                    <div class="mb-subnav subnav3 hide">
+                        <div class="list">
+                            <h3 class="list-heading">platform</h3>
+                            <ul class="items">
+                                <li>Online courses</li>
+                                <li>Online course examples</li>
+                                <li>Digital downloads</li>
+                                <li>Checkout</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h3 class="list-heading">features</h3>
+                            <ul class="items">
+                                <li>Multimedia products</li>
+                                <li>Persell product</li>
+                                <li>Upsells</li>
+                                <li>Coaching</li>
+                                <li>Webinars</li>
+                                <li>Affiliates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Pricing</li>
+                <li>
+                    <section class="mbNav mbNav4">
+                        Resources
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </section>
+                    <div class="mb-subnav subnav4 hide">
+                        <div class="list">
+                            <h3 class="list-heading">free resources</h3>
+                            <ul class="items">
+                                <li>Resource center</li>
+                                <li>Hire a Podia Pro</li>
+                                <li>Creator Advice Library</li>
+                                <li>Podia demo site</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h3 class="list-heading" style="visibility: hidden !important">
+                                hidden
+                            </h3>
+                            <ul class="items">
+                                <li>Creator stories</li>
+                                <li>Free tools</li>
+                                <li>Podia Creator Community</li>
+                                <li>Help center</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main class="main container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="layout">
+                <div class="text">
+                    <p class="heading">Digital Products</p>
+                    <h2>
+                        Sell online courses, coaching sessions, webinars, workshops,
+                        ebooks, and anything you can think of on Podia
+                    </h2>
+                    <p>
+                        Get everything you need in one place that you own. Podia takes
+                        care of hosting products, taking payments, and getting products to
+                        your customers. And you always control your own work.
+                    </p>
+                    <button class="btn primary-btn">Get your free account</button>
+                </div>
+                <figure class="img">
+                    <img class="heroImg" src="heroImg.png" alt="" />
+                </figure>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section class="features">
+            <div class="features-description">
+                <h3>
+                    All you have to do is make the product. Podia takes care of the
+                    details for you.
+                </h3>
+                <p>
+                    Podia lets you make your sales page, take payments, and give your
+                    customers access all in one place. Host and sell your products
+                    without needing to figure out a handful of new tools.
+                </p>
+            </div>
+            <div class="features-card">
+                <div class="card">
+                    <div class="icon">
+                        <img src="f1.svg" alt="" />
+                    </div>
+                    <h4>Checkout and sales are handled for you</h4>
+                    <p>
+                        You don’t have to figure out a bunch of tools or website embeds.
+                        Just connect a payment provider and your Podia site takes care of
+                        payments for you.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="f2.svg" alt="" />
+                    </div>
+                    <h4>Your customers log in, and your products are there for them</h4>
+                    <p>
+                        Your Podia site handles access to products for you. Everything is
+                        in one place. When your customers buy a product, they get a log
+                        in. After that, they can see all the products they’ve bought from
+                        you.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="f3.svg" alt="" />
+                    </div>
+                    <h4>Upload your product. Make your sales page. Done.</h4>
+                    <p>
+                        You could sell a digital product by this afternoon. Podia handles
+                        hosting, sales pages, checkout, and delivery. All you need is
+                        something to sell.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- products -->
+        <section class="products">
+            <div class="proucts-description">
+                <h3>What kinds of products can you sell with Podia?</h3>
+                <p>
+                    Podia gives you the flexibility to sell whatever you want. That
+                    means you have more ways to grow your creator business.
+                </p>
+            </div>
+            <div class="courses">
+                <div class="text">
+                    <p class="heading">ONLINE COURSES</p>
+                    <h3>Beautiful online courses you can build in moments</h3>
+                    <p>
+                        Make a beautiful online course for your customers. Podia hosts
+                        your course. That means all the lessons, files, and videos you
+                        want handled for you.
+                    </p>
+                    <a href="/">
+                        Learn more about courses
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <figure>
+                    <img src="digital_products-courses.png" alt="" />
+                </figure>
+            </div>
+        </section>
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="text">
+                <p>
+                    I’ve wanted to offer e-courses for a while but always felt
+                    overwhelmed with how to set it up. Podia has made it super easy.
+                </p>
+                <p>— Joy Cho, Oh Joy! Academy</p>
+            </div>
+        </section>
+        <!-- templates -->
+        <section class="templates">
+            <div class="text">
+                <p class="heading">DIGITAL DOWNLOADS</p>
+                <h3>Ebooks, templates, and any file type you can think of</h3>
+                <p>
+                    Have an ebook to sell? Templates you love? Podia makes it easy to
+                    spin up a sales page and sell ebooks, templates, audio files, video
+                    files, spreadsheets, and any other file type.
+                </p>
+                <a href="/">
+                    Learn more about downloads
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <figure>
+                <img src="digital_products-downloads.png" alt="" />
+            </figure>
+        </section>
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="text">
+                <p>
+                    We didn’t have to stress about technical details or custom coding.
+                    Using Podia made selling our first eBook quick, efficient, and fun.
+                </p>
+                <p>— Matt & Steph, Plant-based food bloggers</p>
+            </div>
+        </section>
+        <!-- coaching -->
+        <section class="coaches">
+            <div class="text">
+                <p class="heading">COACHING</p>
+                <h3>
+                    One-on-one coaching and consultations, with billing managed for you
+                </h3>
+                <p>
+                    Sometimes your students want one-on-one attention. Podia makes it
+                    easy for you to charge for coaching sessions and consultations.
+                </p>
+                <a href="/">
+                    Learn more about coaching
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <figure>
+                <img src="digital_products-coaching.png" alt="" />
+            </figure>
+        </section>
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="text">
+                <p>
+                    Podia just works. It’s easy to use and includes everything you need
+                    to sell digital products. I’ve tried all the alternatives, and Podia
+                    is hard to beat.
+                </p>
+                <p>— Shawn Leamon, Divorce and Your Money</p>
+            </div>
+        </section>
+        <!-- Webinar -->
+        <section class="coaches">
+            <div class="text">
+                <p class="heading">WEBINARS</p>
+                <h3>
+                    Webinars and workshops with registration and payment in one place
+                </h3>
+                <p>
+                    How can you charge for your webinars and workshops? Do it from your
+                    Podia site. Set up a paid webinar product and your customers can
+                    register straight from your website.
+                </p>
+                <a href="/">
+                    Learn more about webinars
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <figure>
+                <img src="digital_products-webinars.png" alt="" />
+            </figure>
+        </section>
+        <!-- Sign Up -->
+        <section class="signup">
+            <h2>Get your free Podia account</h2>
+            <p>
+                Join the 150,000+ creators who use Podia to create websites, sell
+                digital products, and build online communities.
+            </p>
+            <button class="btn btnSignup">Sign up free</button>
+        </section>
+    </main>
+    <footer class="footer md-hidden">
+        <div class="footer-links">
+            <h4>Platform</h4>
+            <ul>
+                <li>Pricing</li>
+                <li>Sign up free</li>
+                <li>Community</li>
+                <li>Website builder</li>
+                <li>Digital products</li>
+                <li>Email marketing</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+                <li>Contact us</li>
+                <li>Help center</li>
+                <li>Hire a Podia pro</li>
+                <li>Creator community</li>
+                <li>Podia 101</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Features</h4>
+            <ul>
+                <li>Online courses</li>
+                <li>Downloads</li>
+                <li>Webinars</li>
+                <li>Coaching</li>
+                <li>All features</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Compare</h4>
+            <ul>
+                <li>Kajabi</li>
+                <li>Teachable</li>
+                <li>Thinkific</li>
+                <li>Patreon</li>
+                <li>Gumroad</li>
+                <li>Podia alternatives</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+                <li>Examples</li>
+                <li>Demo</li>
+                <li>Creator stories</li>
+                <li>Blog</li>
+                <li>Free tools</li>
+                <li>All resources</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Podia</h4>
+            <ul>
+                <li>Jobs</li>
+                <li>About</li>
+                <li>Branding</li>
+                <li>Reviews</li>
+                <li>Refer-a-creator</li>
+                <li>Affiliates</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Social</h4>
+            <ul>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <span>Podia Labs, Inc. © 2024 </span>
+            <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+    </footer>
+    <footer class="footer mb-footer lg-hidden">
+        <ul>
+            <li>
+                <h3 class="footerBtn" id="footerBtn1">
+                    Platform
+                    <i class="fa-solid fa-chevron-down icon1"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem1">
+                    <ul>
+                        <li>Pricing</li>
+                        <li>Sign up free</li>
+                        <li>Community</li>
+                        <li>Website builder</li>
+                        <li>Digital products</li>
+                        <li>Email marketing</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn2">
+                    Support
+                    <i class="fa-solid fa-chevron-down icon2"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem2">
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Help center</li>
+                        <li>Hire a Podia pro</li>
+                        <li>Creator community</li>
+                        <li>Podia 101</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn3">
+                    Features
+                    <i class="fa-solid fa-chevron-down icon3"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem3">
+                    <ul>
+                        <li>Online courses</li>
+                        <li>Downloads</li>
+                        <li>Webinars</li>
+                        <li>Coaching</li>
+                        <li>All features</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn4">
+                    Compare
+                    <i class="fa-solid fa-chevron-down icon4"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem4">
+                    <ul>
+                        <li>Kajabi</li>
+                        <li>Teachable</li>
+                        <li>Thinkific</li>
+                        <li>Patreon</li>
+                        <li>Gumroad</li>
+                        <li>Podia alternatives</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn5">
+                    Resources
+                    <i class="fa-solid fa-chevron-down icon5"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem5">
+                    <ul>
+                        <li>Examples</li>
+                        <li>Demo</li>
+                        <li>Creator stories</li>
+                        <li>Blog</li>
+                        <li>Free tools</li>
+                        <li>All resources</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn6">
+                    Podia
+                    <i class="fa-solid fa-chevron-down icon6"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem6">
+                    <ul>
+                        <li>Jobs</li>
+                        <li>About</li>
+                        <li>Branding</li>
+                        <li>Reviews</li>
+                        <li>Refer-a-creator</li>
+                        <li>Affiliates</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3 class="footerBtn" id="footerBtn7">
+                    Social
+                    <i class="fa-solid fa-chevron-down icon7"></i>
+                </h3>
+                <div class="footerItems hide" id="footerItem7">
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
